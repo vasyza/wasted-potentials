@@ -29,7 +29,7 @@ const Footer = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection('hero')}
-                    className="text-gray-300 hover:text-white transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+                    className="text-gray-300 hover:text-white transition-all text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 rounded active:scale-95"
                   >
                     Home
                   </button>
@@ -37,7 +37,7 @@ const Footer = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection('projects')}
-                    className="text-gray-300 hover:text-white transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+                    className="text-gray-300 hover:text-white transition-all text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 rounded active:scale-95"
                   >
                     Projects
                   </button>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <li>
                   <button 
                     onClick={() => scrollToSection('contact')}
-                    className="text-gray-300 hover:text-white transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+                    className="text-gray-300 hover:text-white transition-all text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 rounded active:scale-95"
                   >
                     Contact
                   </button>

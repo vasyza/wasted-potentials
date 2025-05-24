@@ -47,7 +47,7 @@ const Projects = () => {
           {projects.map((project) => (
             <article key={project.id} className="bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-500">
               <div className="aspect-video bg-gray-700 flex items-center justify-center relative">
-                <div className="text-gray-500 text-4xl" aria-hidden="true">
+                <div className="text-gray-400 text-4xl" aria-hidden="true">
                   <Image src="/icons/play.svg" alt="" width={48} height={48} />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-800/50 to-transparent"></div>
@@ -70,7 +70,7 @@ const Projects = () => {
                 <div className="flex gap-3">
                   <a 
                     href={project.liveUrl} 
-                    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded-lg text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded-lg text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 active:scale-95"
                     aria-label={`View live demo of ${project.title}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const Projects = () => {
                   </a>
                   <a 
                     href={project.githubUrl} 
-                    className="flex-1 border border-gray-600 hover:border-gray-400 text-white text-center py-2 px-4 rounded-lg text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="flex-1 border border-gray-600 hover:border-gray-400 text-white text-center py-2 px-4 rounded-lg text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-800 active:scale-95"
                     aria-label={`View source code of ${project.title} on GitHub`}
                     target="_blank"
                     rel="noopener noreferrer"

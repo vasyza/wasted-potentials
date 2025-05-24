@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <button 
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black active:scale-95"
                 aria-label="View my projects"
               >
                 View My Work
@@ -33,7 +33,7 @@ const Hero = () => {
               <a 
                 href="/cv.pdf" 
                 download
-                className="inline-block border border-gray-600 hover:border-gray-400 text-white px-8 py-3 rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-black"
+                className="inline-block border border-gray-600 hover:border-gray-400 text-white px-8 py-3 rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-black active:scale-95"
                 aria-label="Download my CV"
               >
                 Download CV
@@ -46,7 +46,7 @@ const Hero = () => {
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white"
+                className="text-gray-400 hover:text-white transition-colors focus:text-white"
                 aria-label="Visit my GitHub profile"
               >
                 <Image src="/icons/github.svg" alt="" width={24} height={24} />
@@ -55,7 +55,7 @@ const Hero = () => {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white"
+                className="text-gray-400 hover:text-white transition-colors focus:text-white"
                 aria-label="Visit my LinkedIn profile"
               >
                 <Image src="/icons/linkedin.svg" alt="" width={24} height={24} />
@@ -64,7 +64,7 @@ const Hero = () => {
                 href="https://twitter.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white"
+                className="text-gray-400 hover:text-white transition-colors focus:text-white"
                 aria-label="Visit my Twitter profile"
               >
                 <Image src="/icons/twitter.svg" alt="" width={24} height={24} />
@@ -73,7 +73,7 @@ const Hero = () => {
                 href="https://dribbble.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white"
+                className="text-gray-400 hover:text-white transition-colors focus:text-white"
                 aria-label="Visit my Dribbble profile"
               >
                 <Image src="/icons/dribbble.svg" alt="" width={24} height={24} />
@@ -82,7 +82,7 @@ const Hero = () => {
                 href="https://figma.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors focus:outline-none focus:text-white"
+                className="text-gray-400 hover:text-white transition-colors focus:text-white"
                 aria-label="Visit my Figma profile"
               >
                 <Image src="/icons/figma.svg" alt="" width={24} height={24} />
