@@ -38,21 +38,21 @@ const Header = () => {
                role="navigation" aria-label="Main navigation">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-white hover:text-blue-400 transition-colors focus:outline-none focus:text-blue-400"
+              className="text-white hover:text-blue-400 transition-all focus:text-blue-400 active:scale-95"
               aria-label="Go to home section"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection('projects')}
-              className="text-white hover:text-blue-400 transition-colors focus:outline-none focus:text-blue-400"
+              className="text-white hover:text-blue-400 transition-all focus:text-blue-400 active:scale-95"
               aria-label="Go to projects section"
             >
               Projects
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-white hover:text-blue-400 transition-colors focus:outline-none focus:text-blue-400"
+              className="text-white hover:text-blue-400 transition-all focus:text-blue-400 active:scale-95"
               aria-label="Go to contact section"
             >
               Contact
@@ -62,7 +62,7 @@ const Header = () => {
           {/* Mobile Menu Button & Language Switcher */}
           <div className="flex items-center space-x-4">
             <button
-              className="text-white hover:text-blue-400 transition-colors focus:outline-none focus:text-blue-400"
+              className="text-white hover:text-blue-400 transition-all focus:text-blue-400 active:scale-95"
               aria-label="Switch language"
             >
               EN
@@ -70,7 +70,7 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-white hover:text-blue-400 transition-colors focus:outline-none focus:text-blue-400"
+              className="md:hidden text-white hover:text-blue-400 transition-all focus:text-blue-400 active:scale-95"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={isMenuOpen}
@@ -96,21 +96,21 @@ const Header = () => {
             <div className="flex flex-col space-y-4 pt-4">
               <button
                 onClick={() => scrollToSection('hero')}
-                className="text-white hover:text-blue-400 transition-colors text-left focus:outline-none focus:text-blue-400"
+                className="text-white hover:text-blue-400 transition-all text-left focus:text-blue-400 active:scale-95"
                 aria-label="Go to home section"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection('projects')}
-                className="text-white hover:text-blue-400 transition-colors text-left focus:outline-none focus:text-blue-400"
+                className="text-white hover:text-blue-400 transition-all text-left focus:text-blue-400 active:scale-95"
                 aria-label="Go to projects section"
               >
                 Projects
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-white hover:text-blue-400 transition-colors text-left focus:outline-none focus:text-blue-400"
+                className="text-white hover:text-blue-400 transition-all text-left focus:text-blue-400 active:scale-95"
                 aria-label="Go to contact section"
               >
                 Contact
