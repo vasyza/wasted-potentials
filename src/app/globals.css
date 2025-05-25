@@ -41,3 +41,29 @@ body {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
+
+@keyframes neonAurora {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-neon-aurora {
+  background: linear-gradient(
+          120deg,
+          #00FFA3, /* Neon Mint */
+          #DC00FF,  /* Neon Purple */
+          #00E0FF,  /* Neon Cyan */
+          #FF007F,  /* Neon Pink */
+          #ADFF2F,  /* Neon Green-Yellow */
+          #00FFA3   /* Neon Mint again for smooth loop */
+  );
+  background-size: 300% 300%; /* Увеличиваем размер фона для плавного движения */
+  animation: neonAurora 10s linear infinite; /* Продолжительность и тип анимации */
+}
