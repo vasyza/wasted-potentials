@@ -137,8 +137,8 @@ const translations: Translations = {
         en: 'Specialist in complex architectures and high-load systems, good experience in AI.'
     },
     team_member2_name: {
-        ru: 'Matvey',
-        en: 'Матвей'
+        ru: 'Lionsky',
+        en: 'Lionsky'
     },
     team_member2_role: {
         ru: 'Fullstack-разработчик',
@@ -149,8 +149,8 @@ const translations: Translations = {
         en: 'Web development specialist, active AI integrator in projects.'
     },
     team_member3_name: {
-        ru: 'Андрей',
-        en: 'Dr.Andrey'
+        ru: 'Proph',
+        en: 'Proph'
     },
     team_member3_role: {
         ru: 'Frontend Developer (AI & Math Focus)',
@@ -175,7 +175,7 @@ const translations: Translations = {
 }
 
 export default function Portfolio() {
-    const [currentLang, setCurrentLang] = useState<'ru' | 'en'>('en')
+    const [currentLang, setCurrentLang] = useState<'ru' | 'en'>('ru')
     const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
@@ -227,8 +227,8 @@ export default function Portfolio() {
 
     const teamMembers = [
         { nameKey: 'team_member1_name', roleKey: 'team_member1_role', bioKey: 'team_member1_bio', avatar: '👨‍💻' },
-        { nameKey: 'team_member2_name', roleKey: 'team_member2_role', bioKey: 'team_member2_bio', avatar: '👩‍🎨' },
-        { nameKey: 'team_member3_name', roleKey: 'team_member3_role', bioKey: 'team_member3_bio', avatar: '👨‍💼' }
+        { nameKey: 'team_member2_name', roleKey: 'team_member2_role', bioKey: 'team_member2_bio', avatar: '👨‍💻' },
+        { nameKey: 'team_member3_name', roleKey: 'team_member3_role', bioKey: 'team_member3_bio', avatar: '👨‍💻' }
     ];
 
 
