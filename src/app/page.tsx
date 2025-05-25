@@ -93,12 +93,12 @@ const translations: Translations = {
         en: 'Telegram bot for working with foreign cards. More than 10 thousand active users, more than a thousand sales.'
     },
     portfolio_item4_title: {
-        ru: 'ТГ-бот + WebApp Кинобот',
-        en: 'Tg-bot + WebApp CinemaBot'
+        ru: 'Маркетплейс',
+        en: 'Marketplace'
     },
     portfolio_item4_desc: {
-        ru: 'Телеграмм бот для просмотра фильмов в 4к с интеграцией в WebApp.',
-        en: 'Telegram bot for watching movies in 4k with WebApp integration.'
+        ru: 'Маркетплейс цифровых (и не только) товаров.',
+        en: 'A marketplace for digital (and other) products.'
     },
     stack_title: { // Новый перевод
         ru: 'Технологии:',
@@ -218,8 +218,8 @@ export default function Portfolio() {
         {
             titleKey: 'portfolio_item4_title',
             descKey: 'portfolio_item4_desc',
-            imageUrl: '/kinobot.png',
-            stack: ['Python', 'FastAPI', 'PostgreSQL', 'Aiogram3', 'Reverse Engineering'],
+            imageUrl: '/seller.png',
+            stack: ['Python', 'Next.js', 'TallwindCSS', 'PostgreSQL', 'Socket.io', 'Redis'],
             liveLink: null,
             repoLink: null
         }
@@ -291,7 +291,7 @@ export default function Portfolio() {
                             <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                                 {t('hero_title')}
                             </h1>
-                            <div className="h-1 w-32 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-8" />
+                            <div className="h-1 w-32 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto mb-8"/>
                         </div>
                         <h2 className="text-2xl md:text-4xl font-light mb-6 text-gray-300">
                             {t('hero_subtitle')}
@@ -299,10 +299,20 @@ export default function Portfolio() {
                         <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
                             {t('hero_description')}
                         </p>
-                        <button className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyan-400">
-                            <span className="relative z-10">{t('get_started')}</span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </button>
+                        <a
+                            href="https://t.me/lionsky86"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group relative inline-block focus:outline-none focus:ring-4 focus:ring-cyan-400 rounded-lg"
+                        >
+                            <button
+                                className="relative w-full px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold text-lg text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:scale-105"
+                            >
+                                <span className="relative z-10">{t('get_started')}</span>
+                                <div
+                                    className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"/>
+                            </button>
+                        </a>
                     </div>
                 </section>
 
@@ -314,17 +324,17 @@ export default function Portfolio() {
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {[
-                                { title: t('web_dev'), desc: t('web_desc'), icon: '🌐' },
-                                { title: t('mobile_dev'), desc: t('mobile_desc'), icon: '📱' },
-                                { title: t('backend_dev'), desc: t('backend_desc'), icon: '⚙️' },
-                                { title: t('ai_dev'), desc: t('ai_desc'), icon: '🤖' }
+                                {title: t('web_dev'), desc: t('web_desc'), icon: '🌐'},
+                                {title: t('mobile_dev'), desc: t('mobile_desc'), icon: '📱'},
+                                {title: t('backend_dev'), desc: t('backend_desc'), icon: '⚙️'},
+                                {title: t('ai_dev'), desc: t('ai_desc'), icon: '🤖'}
                             ].map((service, index) => (
                                 <div key={index} className="group relative p-6 bg-white/5 backdrop-blur-sm border border-cyan-500/20 rounded-xl hover:border-cyan-400/40 transition-all duration-300 hover:transform hover:scale-105 focus-within:ring-2 focus-within:ring-cyan-400">
                                     <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-purple-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                     <div className="relative z-10">
                                         <div className="text-4xl mb-4" aria-hidden="true">{service.icon}</div>
                                         <h3 className="text-xl font-semibold mb-3 text-cyan-400">{service.title}</h3>
-                                        <p className="text-gray-400 text-sm leading-relaxed">{service.desc}</p>
+                                        <p className="text-gray-300 text-sm leading-relaxed">{service.desc}</p>
                                     </div>
                                 </div>
                             ))}
@@ -358,7 +368,7 @@ export default function Portfolio() {
                                         <h3 className="text-2xl font-semibold mb-3 text-purple-300 group-hover:text-purple-200 transition-colors">
                                             {t(item.titleKey)}
                                         </h3>
-                                        <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
+                                        <p className="text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
                                             {t(item.descKey)}
                                         </p>
 
@@ -433,7 +443,7 @@ export default function Portfolio() {
                                         <div className="text-5xl mb-4" aria-hidden="true">{member.avatar}</div>
                                         <h3 className="text-xl font-semibold mb-1 text-pink-400">{t(member.nameKey)}</h3>
                                         <p className="text-cyan-400 text-sm font-mono mb-3">{t(member.roleKey)}</p>
-                                        <p className="text-gray-400 text-xs leading-relaxed">{t(member.bioKey)}</p>
+                                        <p className="text-gray-300 text-xs leading-relaxed">{t(member.bioKey)}</p>
                                     </div>
                                 </div>
                             ))}
@@ -447,7 +457,7 @@ export default function Portfolio() {
                         <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                             {t('contact_title')}
                         </h2>
-                        <p className="text-lg text-gray-400 mb-12">
+                        <p className="text-lg text-gray-300 mb-12">
                             {t('contact_description')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
