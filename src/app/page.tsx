@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image' // Импортируем Image для оптимизации изображений
-
+import {Bot, Brain, Calculator, Code, Cog, Smartphone, Wifi} from "lucide-react"
 
 
 interface Translations {
@@ -129,8 +129,8 @@ const translations: Translations = {
         en: 'Vasyz'
     },
     team_member1_role: {
-        ru: 'Ведущий Fullstack-разработчик',
-        en: 'Lead Fullstack developer'
+        ru: 'Fullstack-разработчик',
+        en: 'Fullstack developer'
     },
     team_member1_bio: {
         ru: 'Специалист по сложным архитектурам и высоким нагрузкам, с хорошим бэкгранудом в ИИ.',
@@ -153,8 +153,8 @@ const translations: Translations = {
         en: 'Proph'
     },
     team_member3_role: {
-        ru: 'Frontend Developer (AI & Math Focus)',
-        en: 'Frontend Developer (AI & Math Focus)'
+        ru: 'Frontend Developer',
+        en: 'Frontend Developer'
     },
     team_member3_bio: {
         ru: 'Разрабатывает клиентскую часть веб-приложений. Является молодым специалистом в области ИИ.',
@@ -226,9 +226,9 @@ export default function Portfolio() {
     ];
 
     const teamMembers = [
-        { nameKey: 'team_member1_name', roleKey: 'team_member1_role', bioKey: 'team_member1_bio', avatar: '👨‍💻' },
-        { nameKey: 'team_member2_name', roleKey: 'team_member2_role', bioKey: 'team_member2_bio', avatar: '👨‍💻' },
-        { nameKey: 'team_member3_name', roleKey: 'team_member3_role', bioKey: 'team_member3_bio', avatar: '👨‍💻' }
+        { nameKey: 'team_member1_name', roleKey: 'team_member1_role', bioKey: 'team_member1_bio', avatar: <Brain size='50px' stroke-width='1px'></Brain> },
+        { nameKey: 'team_member2_name', roleKey: 'team_member2_role', bioKey: 'team_member2_bio', avatar: <Code size='50px' stroke-width='1px'></Code> },
+        { nameKey: 'team_member3_name', roleKey: 'team_member3_role', bioKey: 'team_member3_bio', avatar: <Calculator size='50px' stroke-width='1px'></Calculator> }
     ];
 
 
@@ -324,15 +324,15 @@ export default function Portfolio() {
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                             {[
-                                {title: t('web_dev'), desc: t('web_desc'), icon: '🌐'},
-                                {title: t('mobile_dev'), desc: t('mobile_desc'), icon: '📱'},
-                                {title: t('backend_dev'), desc: t('backend_desc'), icon: '⚙️'},
-                                {title: t('ai_dev'), desc: t('ai_desc'), icon: '🤖'}
+                                {title: t('web_dev'), desc: t('web_desc'), icon: <Wifi size='50px'></Wifi>},
+                                {title: t('mobile_dev'), desc: t('mobile_desc'), icon: <Smartphone size='50px'></Smartphone>},
+                                {title: t('backend_dev'), desc: t('backend_desc'), icon: <Cog size='50px'></Cog>},
+                                {title: t('ai_dev'), desc: t('ai_desc'), icon: <Bot size='50px'></Bot>}
                             ].map((service, index) => (
                                 <div key={index} className="group relative p-6 bg-white/5 backdrop-blur-sm border border-cyan-500/20 rounded-xl hover:border-cyan-400/40 transition-all duration-300 hover:transform hover:scale-105 focus-within:ring-2 focus-within:ring-cyan-400">
                                     <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-purple-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                     <div className="relative z-10">
-                                        <div className="text-4xl mb-4" aria-hidden="true">{service.icon}</div>
+                                        <div className="text-4xl text-cyan-400 mb-4" aria-hidden="true">{service.icon}</div>
                                         <h3 className="text-xl font-semibold mb-3 text-cyan-400">{service.title}</h3>
                                         <p className="text-gray-300 text-sm leading-relaxed">{service.desc}</p>
                                     </div>
@@ -440,9 +440,11 @@ export default function Portfolio() {
                                 <div key={index} className="group relative p-6 text-center bg-white/5 backdrop-blur-sm border border-pink-500/20 rounded-xl hover:border-pink-400/40 transition-all duration-300 hover:transform hover:scale-105 focus-within:ring-2 focus-within:ring-pink-400">
                                     <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 to-purple-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                     <div className="relative z-10">
-                                        <div className="text-5xl mb-4" aria-hidden="true">{member.avatar}</div>
+                                        <div className="flex justify-center text-cyan-400">
+                                            <div className="text-5xl mb-1" aria-hidden="true">{member.avatar}</div>
+                                        </div>
                                         <h3 className="text-xl font-semibold mb-1 text-pink-400">{t(member.nameKey)}</h3>
-                                        <p className="text-cyan-400 text-sm font-mono mb-3">{t(member.roleKey)}</p>
+                                        <p className="text-pink-400 text-sm font-mono mb-3">{t(member.roleKey)}</p>
                                         <p className="text-gray-300 text-xs leading-relaxed">{t(member.bioKey)}</p>
                                     </div>
                                 </div>
