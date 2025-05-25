@@ -218,7 +218,7 @@ export default function Portfolio() {
         {
             titleKey: 'portfolio_item4_title',
             descKey: 'portfolio_item4_desc',
-            imageUrl: '/seller.png',
+            imageUrl: '/seller.jpg',
             stack: ['Python', 'Next.js', 'TallwindCSS', 'PostgreSQL', 'Socket.io', 'Redis'],
             liveLink: null,
             repoLink: null
