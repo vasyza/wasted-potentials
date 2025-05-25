@@ -13,26 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Elias - Frontend Developer Portfolio',
-  description: 'Experienced Frontend Developer specializing in React, Next.js, and modern web technologies. View my portfolio of innovative web applications and get in touch for your next project.',
+  title: 'Wasted-Potentials Team Portfolio',
   keywords: 'frontend developer, react developer, nextjs, web development, portfolio, javascript, typescript',
-  authors: [{ name: 'Elias' }],
-  creator: 'Elias',
-  openGraph: {
-    title: 'Elias - Frontend Developer Portfolio',
-    description: 'Experienced Frontend Developer specializing in React, Next.js, and modern web technologies.',
-    type: 'website',
-    locale: 'en_US',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Elias - Frontend Developer Portfolio',
-    description: 'Experienced Frontend Developer specializing in React, Next.js, and modern web technologies.',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
 };
 
 export const viewport: Viewport = {

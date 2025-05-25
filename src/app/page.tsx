@@ -85,20 +85,20 @@ const translations: Translations = {
         en: 'A web portal aimed at finding partners for project development.'
     },
     portfolio_item3_title: {
-        ru: 'Система "Гамма"',
-        en: 'System "Gamma"'
+        ru: 'CoinyWallet',
+        en: 'CoinyWallet'
     },
     portfolio_item3_desc: {
-        ru: 'Масштабируемое бэкенд-решение для e-commerce проекта с интеграцией множества платежных систем.',
-        en: 'Scalable backend solution for an e-commerce project with multiple payment system integrations.'
+        ru: 'Телеграмм бот для работы с зарубежными картами. Больше 10 тысяч активных юзеров, больше тысячи продаж.',
+        en: 'Telegram bot for working with foreign cards. More than 10 thousand active users, more than a thousand sales.'
     },
     portfolio_item4_title: {
-        ru: 'Концепт "Дельта"',
-        en: 'Concept "Delta"'
+        ru: 'ТГ-бот + WebApp Кинобот',
+        en: 'Tg-bot + WebApp CinemaBot'
     },
     portfolio_item4_desc: {
-        ru: 'Исследование и разработка прототипа AI-ассистента для автоматизации клиентской поддержки.',
-        en: 'Research and prototype development of an AI assistant for automating customer support.'
+        ru: 'Телеграмм бот для просмотра фильмов в 4к с интеграцией в WebApp.',
+        en: 'Telegram bot for watching movies in 4k with WebApp integration.'
     },
     stack_title: { // Новый перевод
         ru: 'Технологии:',
@@ -195,7 +195,7 @@ export default function Portfolio() {
             titleKey: 'portfolio_item1_title',
             descKey: 'portfolio_item1_desc',
             imageUrl: '/gpt.png',
-            stack: ['Next.js', 'Tailwind CSS', 'Python', 'FastAPI', 'PostgreSQL'],
+            stack: ['Next.js', 'Tailwind CSS', 'Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Yandex S3'],
             liveLink: null,
             repoLink: null
         },
@@ -203,25 +203,25 @@ export default function Portfolio() {
             titleKey: 'portfolio_item2_title',
             descKey: 'portfolio_item2_desc',
             imageUrl: '/cognit.png',
-            stack: ["Next.js", "Python", "FastAPI", "PostgreSQL", "SQLAlchemy"],
+            stack: ["Next.js", "Python", "FastAPI", "PostgreSQL", "SQLAlchemy", 'Socket.io'],
             liveLink: null,
             repoLink: null
         },
         {
             titleKey: 'portfolio_item3_title',
             descKey: 'portfolio_item3_desc',
-            imageUrl: 'https://placehold.co/600x400/7C2D12/FDBA74?text=System+Gamma&font=montserrat',
-            stack: ['Node.js', 'Express.js', 'PostgreSQL', 'Docker', 'AWS S3'],
-            liveLink: null, // Пример отсутствия ссылки
-            repoLink: '#'
+            imageUrl: '/coiny_wallet.jpg',
+            stack: ['Python', 'Aiogram3', 'PostgreSQL', 'Docker', 'Yandex S3'],
+            liveLink: null,
+            repoLink: null
         },
         {
             titleKey: 'portfolio_item4_title',
             descKey: 'portfolio_item4_desc',
-            imageUrl: 'https://placehold.co/600x400/065F46/6EE7B7?text=AI+Concept+Delta&font=montserrat',
-            stack: ['Python', 'Flask', 'MongoDB', 'GraphQL', 'Hugging Face'],
-            liveLink: '#',
-            repoLink: '#'
+            imageUrl: '/kinobot.png',
+            stack: ['Python', 'FastAPI', 'PostgreSQL', 'Aiogram3', 'Reverse Engineering'],
+            liveLink: null,
+            repoLink: null
         }
     ];
 
