@@ -78,7 +78,7 @@ const translations: Translations = {
     },
     portfolio_item2_title: {
         ru: 'Веб-портал "Cognit.io"',
-        en: 'Web-application "Cpgnit.io"'
+        en: 'Web-application "Cognit.io"'
     },
     portfolio_item2_desc: {
         ru: 'Веб-портал, направленный на поиск партнеров для разработки проекта.',
