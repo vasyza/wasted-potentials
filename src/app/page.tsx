@@ -3,10 +3,7 @@ import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image' // Импортируем Image для оптимизации изображений
 
-interface Language {
-    code: 'ru' | 'en'
-    name: string
-}
+
 
 interface Translations {
     [key: string]: {
@@ -16,10 +13,6 @@ interface Translations {
 }
 
 // ... (languages - без изменений)
-const languages: Language[] = [
-    { code: 'ru', name: 'RU' },
-    { code: 'en', name: 'EN' }
-]
 
 
 const translations: Translations = {
