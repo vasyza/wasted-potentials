@@ -1,8 +1,16 @@
-"use client"
-import { useState, useEffect } from 'react'
+'use client'
+import {
+	Bot,
+	Brain,
+	Calculator,
+	Code,
+	Cog,
+	Smartphone,
+	Wifi
+} from 'lucide-react'
 import Head from 'next/head'
 import Image from 'next/image' // Импортируем Image для оптимизации изображений
-import {Bot, Brain, Calculator, Code, Cog, Smartphone, Wifi} from "lucide-react"
+import { useEffect, useState } from 'react'
 
 
 interface Translations {
@@ -125,8 +133,8 @@ const translations: Translations = {
         en: 'OUR TEAM'
     },
     team_member1_name: {
-        ru: 'Vasyz',
-        en: 'Vasyz'
+        ru: 'vasyz',
+        en: 'vasyz'
     },
     team_member1_role: {
         ru: 'Fullstack-разработчик',
@@ -137,8 +145,8 @@ const translations: Translations = {
         en: 'Specialist in complex architectures and high-load systems, good experience in AI.'
     },
     team_member2_name: {
-        ru: 'Lionsky',
-        en: 'Lionsky'
+        ru: 'lionsky',
+        en: 'lionsky'
     },
     team_member2_role: {
         ru: 'Fullstack-разработчик',
@@ -149,8 +157,8 @@ const translations: Translations = {
         en: 'Web development specialist, active AI integrator in projects.'
     },
     team_member3_name: {
-        ru: 'Proph',
-        en: 'Proph'
+        ru: 'proph',
+        en: 'proph'
     },
     team_member3_role: {
         ru: 'Frontend Developer',
